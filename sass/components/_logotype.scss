@@ -1,0 +1,22 @@
+.logo {
+    display: inline-block;
+
+    color: var(--logo-text-color);
+
+    font-family: 'Raleway', cursive;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+}
+
+.logo__part {
+    color: var(--accent-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}

@@ -1,0 +1,50 @@
+@media screen and (max-width: 1199px) {
+    .work-type {
+        display: none;
+    }
+}
+
+.work-type {
+    padding-top: 47px;
+}
+
+.work-type__list {
+    display: flex;
+    gap: 30px;
+}
+
+.work-type__description {
+    display: block;
+}
+
+.work-type__photo {
+    display: block;
+}
+
+.work-type__thumb {
+    position: relative;
+    height: 294px;
+}
+
+.work-type__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    background-color: var(--description-bgc-color);
+}
+
+.work-type__title {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+    text-align: center;
+
+    color: var(--primary-background-color);
+
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+}

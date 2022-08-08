@@ -1,0 +1,247 @@
+.footer {
+    padding: 60px 0;
+
+    background-color: var(--additional-background-color);
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+
+    color: var(--hero-text-color);
+}
+
+.address {
+    font-style: normal;
+}
+
+.address-list {
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address__street {
+    display: inline-block;
+
+    color: var(--hero-text-color);
+
+    text-decoration: none;
+}
+
+.address__link {
+    display: inline-block;
+
+    color: var(--footer-contacts-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
+.address-list .address__item:not( :last-child) {
+    margin-bottom: 8px;
+}
+
+.footer-container {
+    display: block;
+}
+
+.footer-address {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.footer-media {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 60px;
+}
+
+.footer-media__title,
+.footer-form__title {
+    display: block;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+        
+    color: var(--primary-background-color);
+        
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.media__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-media__item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-media__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background-color: var(--ftr-bgc-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-text-color);
+    }
+}
+
+.footer-media__icon {
+    fill: var(--primary-background-color);
+}
+
+.footer-newslatter {
+    margin: 0;
+}
+
+.footer-form {
+    display: block;
+}
+
+.footer-form__row {
+    display: block;
+}
+
+.footer-form__input {
+    margin-bottom: 20px;
+    padding: 15px 16px;
+    
+    width: 450px;
+    
+    background-color: transparent;
+    color: var(--primary-background-color);
+    
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:focus {
+        outline: transparent;
+        border: 1px solid var(--accent-text-color);
+    }
+    
+    &::placeholder {
+        font-size: 16px;
+    
+        color: var(--footer-contacts-color);
+    }
+}
+
+.footer-form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-form__icon {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-address {
+        margin-top: 0;
+        margin-left: 76px;
+        margin-bottom: 60px;
+    }
+
+    .footer-media {
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: 89px;
+        margin-bottom: 0;
+    }
+
+    .footer-newslatter {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer-address {
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .footer-media {
+        margin-top: 12px;
+        margin-left: 70px;
+        margin-bottom: 0;
+    }
+
+    .footer-media__title,
+    .footer-form__title {
+        text-align: left;
+    }
+
+    .footer-newslatter {
+        margin-top: 12px;
+        margin-left: auto;
+    }
+
+    .footer-form__row {
+        display: flex;
+    }
+
+    .footer-form__input {
+        width: 358px;
+        margin-bottom: 0;
+    }
+
+    .footer-form__button {
+        margin-left: 12px;
+        margin-right: 0;
+    }
+}
+
+

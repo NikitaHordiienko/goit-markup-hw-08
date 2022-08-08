@@ -1,0 +1,122 @@
+.worker {
+    background-color: var(--extra-backround-color);
+}
+
+.worker__list {
+    display: block;
+}
+
+.worker__info {
+    width: 450px;
+
+    background-color: var(--primary-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.worker__photo {
+    display: block;
+}
+
+.worker__description {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.worker__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+}
+
+.worker__suptitle {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.social-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    background-color: var(--primary-background-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-text-color);
+    }
+}
+
+.social-list__icon {
+    fill: var(--icons-color);
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social-list__link:hover>&,
+    .social-list__link:focus>& {
+        fill: var(--primary-background-color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .worker__list {
+        display: flex;
+        flex-wrap: wrap;
+        
+        gap: 30px;
+    }
+
+    .worker__info {
+        width: 354px;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .worker__info {
+        width: 270px;
+    }
+
+    .worker__description {
+        padding-bottom: 30px;
+    }
+}
