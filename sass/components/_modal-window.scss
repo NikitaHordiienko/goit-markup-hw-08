@@ -3,8 +3,10 @@
     top: 50%;
     left: 50%;
 
+    width: 96%;
+    height: 96%;
     max-width: 450px;
-    min-height: 581px;
+    max-height: 609px;
     background-color: var(--primary-background-color);
     border-radius: 4px;
 
@@ -51,13 +53,13 @@
 
     .modal__button:hover>&,
     .modal__button:focus>& {
-            fill: var(--accent-text-color);    
-        }
+        fill: var(--accent-text-color);
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .modal {
-        min-width: 450px;
-        max-width: none;
-    }    
+        max-width: 528px;
+        max-height: 581px;
+    }
 }
