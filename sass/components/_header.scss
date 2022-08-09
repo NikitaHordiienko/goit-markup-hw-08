@@ -60,8 +60,8 @@
         margin-bottom: 32px;
     }
 
-    .mobile-menu-site-nav_list {
-        margin-bottom: 302px;
+    .mobile-menu-site-nav {
+        margin-bottom: 306px;
     }
 
     .mobile-menu-auth-nav__link_phone {
@@ -106,10 +106,18 @@
         border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 479px) {
+    .mobile-menu-social-list {
+        flex-wrap: wrap;
+    }
+    
     .mobile-menu-social__link {
         font-size: 15px;
-    }   
+    }
+    
+    .mobile-menu-auth-nav__link_phone {
+        font-size: 27px;
+    }
 }
 
 

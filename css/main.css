@@ -147,8 +147,8 @@ body {
   .mobile-menu-site-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  .mobile-menu-site-nav_list {
-    margin-bottom: 302px;
+  .mobile-menu-site-nav {
+    margin-bottom: 306px;
   }
   .mobile-menu-auth-nav__link_phone {
     font-weight: 500;
@@ -183,9 +183,15 @@ body {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 479px) {
+  .mobile-menu-social-list {
+    flex-wrap: wrap;
+  }
   .mobile-menu-social__link {
     font-size: 15px;
+  }
+  .mobile-menu-auth-nav__link_phone {
+    font-size: 27px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -836,6 +842,7 @@ body {
   .mobile-menu__container {
     position: relative;
     padding: 48px 40px;
+    max-height: 797px;
   }
   .mobile-menu__close-button {
     display: flex;
@@ -863,7 +870,6 @@ body {
 }
 .hero {
   max-width: 480px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: #C4C4C4;
@@ -911,7 +917,6 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-desktop.jpg");
   }
 }
@@ -1181,6 +1186,12 @@ body {
   fill: var(--accent-text-color);
 }
 
+@media screen and (max-width: 480px) {
+  .clients__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .client__item {
     width: 226px;
@@ -1244,7 +1255,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 24px 24px;
+  padding: 63px 24px;
   margin: 0;
   color: var(--primary-background-color);
   background-color: var(--project-bg-color);
@@ -1294,6 +1305,17 @@ body {
   line-height: 1.88;
 }
 
+@media screen and (max-width: 389px) {
+  .project-thumb__description {
+    font-size: 15px;
+    padding: 15px 24px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 479px) {
+  .project-thumb__description {
+    padding: 30px 24px;
+  }
+}
 @media screen and (min-width: 768px) {
   .projects-navigation {
     justify-content: center;
