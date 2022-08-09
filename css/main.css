@@ -1206,7 +1206,7 @@ body {
 }
 
 .project__info {
-  width: 450px;
+  max-width: 450px;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1224,6 +1224,7 @@ body {
 
 .project__photo {
   display: block;
+  width: 100%;
 }
 
 .project-thumb {
@@ -1300,6 +1301,7 @@ body {
   }
   .project__info {
     width: 354px;
+    max-width: none;
   }
   .project__info:not(:last-child) {
     margin-bottom: 0;

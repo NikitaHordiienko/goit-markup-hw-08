@@ -13,7 +13,7 @@
 }
 
 .project__info {
-    width: 450px;
+    max-width: 450px;
 
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -36,6 +36,7 @@
 
 .project__photo {
     display: block;
+    width: 100%;
 }
 
 .project-thumb {
@@ -127,6 +128,7 @@
 
     .project__info {
         width: 354px;
+        max-width: none;
 
         &:not(:last-child) {
              margin-bottom: 0;
