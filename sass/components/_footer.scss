@@ -133,7 +133,7 @@
     margin-bottom: 20px;
     padding: 15px 16px;
     
-    width: 450px;
+    width: 100%;
     
     background-color: transparent;
     color: var(--primary-background-color);
@@ -203,6 +203,10 @@
     .footer-newslatter {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .footer-form__input {
+        width: 450px;
     }
 }
 
